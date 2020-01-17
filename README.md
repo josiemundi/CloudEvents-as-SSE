@@ -7,7 +7,7 @@ This demo uses the following go libraries:
 - kncloudevents - event deliver for CloudEvents (built on top of the prior)
 - Event Source - server sent events in go
 
-Instructions: 
+**Run go code:**
 
 Run main.go
 
@@ -18,6 +18,7 @@ curl -v localhost:8008/events \
 -X GET
 
 **Send a CloudEvent**
+
 From another terminal window POST a CloudEvent: 
 curl -v localhost:8080/events \
 -X POST \
