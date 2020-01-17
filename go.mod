@@ -1,4 +1,4 @@
-module github.com/josiemundi/knative-eventing-web-eventsource-server
+module github.com/josiemundi/CloudEvents-as-SSE
 
 go 1.13
 
