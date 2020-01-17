@@ -20,13 +20,13 @@ var es eventsource.EventSource
 var id int
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+	fmt.Fprintf(w, "Hi there, this is a %s!", r.URL.Path[1:])
 }
 
 func display(event cloudevents.Event) {
 	fmt.Printf("☁️  cloudevents.Event\n%s", event.String())
 	fmt.Println(es)
-	es.SendEventMessage(event.String(), "tick-event", strconv.Itoa(id))
+	es.SendEventMessage(event.String(), "cloud-event", strconv.Itoa(id))
 	id++
 }
 
