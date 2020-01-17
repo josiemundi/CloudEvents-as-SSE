@@ -1,6 +1,10 @@
 # CloudEvents-as-SSE
 Simple demo of sending CloudEvents as Server Sent Events using Go.
 
+This demo uses the following go libraries:
+
+
+
 From one terminal window run the command:
 curl -v localhost:8008/events \
 -X GET
