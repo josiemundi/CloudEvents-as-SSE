@@ -3,6 +3,8 @@ Simple demo of sending CloudEvents as Server Sent Events using Go.
 
 This demo uses the following go libraries:
 
+Go SDK for CloudEvents
+
 
 
 From one terminal window run the command:
